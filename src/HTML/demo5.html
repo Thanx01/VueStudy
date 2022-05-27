@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    性别:
+    <select name="" id="" v-model="xzz">
+        <option value="男"></option>
+        <option value="女"></option>
+        <option value="无"></option>
+    </select>
+    {{xzz}}
+</div>
+<script src="https://cn.vuejs.org/js/vue.js"></script>
+<script>
+<!--  双向绑定  -->
+    var vm=new Vue({
+        el:"#app",
+        data:{
+            xzz:""
+        },
+    });
+</script>
+
+</body>
+</html>

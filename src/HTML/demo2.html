@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div id="app">
+    <h1 v-if="ok">yes</h1>
+    <h1 v-else>no</h1>
+    <h1 v-for="i in items">
+        {{i.message}}
+    </h1>
+</div>
+<script src="https://cn.vuejs.org/js/vue.js"></script>
+<script>
+    var vm=new Vue({
+        el:"#app",
+        data:{
+            ok:true,
+            items:[
+                {message:1},
+                {message:2},
+                {message:3}
+            ]
+        }
+    });
+</script>
+</body>
+</html>
